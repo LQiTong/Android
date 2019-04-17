@@ -1,5 +1,5 @@
 <!--定义字符串资源-->
 <resources>
-    <string name="app_name">Hello world</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Hello Android</string>
+    <string name="action_settings">设置</string>
 </resources>
