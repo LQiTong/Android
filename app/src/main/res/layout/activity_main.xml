@@ -6,6 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <!-- tools:context=".MainActivity" 这一句不会被打包进 APK 。仅是说明你当前的 Layout 所在的渲染上下文是
+                                       activity name 对应的那个 activity，如果这个 activity 在 manifest
+                                       文件中设置了 Theme,那么 ADT 的 Layout Editor 会根据这个 Theme 来
+                                       渲染你当前的 Layout -->
 
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"

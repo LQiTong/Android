@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>  <!-- 定义了使用 xml 的版本与编码方式 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+    <!-- manifest xmlns:android="http://schemas.android.com/apk/res/android"
+         定义我们需要使用的架构，是来自于哪里
+         package="com.example.myapplication"
+         定义我们程序所在的 java 包，应用包名是应用的唯一标识 -->
 
     <application
         android:allowBackup="true"
@@ -9,14 +13,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!-- android:allowBackup="true"  是否允许备份文件，允许
+             android:icon="@mipmap/ic_launcher"  定义应用的图标，引用 drawable 中的 ic_launchaer
+             android:label="@string/app_name"  定义应用的名称，引用 string 中的 app_name
+             android:theme="@style/AppTheme"  定义应用使用的主题， app 的风格 -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+            <!-- android:name=".MainActivity"
+                 声明一个 activity，包括 activity 所在的包和app的名称，前面 com.example.myapplication 可以用.来表示
+                 android:label="@string/app_name" activity 的名称，显示给用户看
+                 android:theme="@style/AppTheme.NoActionBar"  -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 这两个代码决定了程序的入口，且 app 会被显示在 Home 的应用程序列表中 -->
             </intent-filter>
         </activity>
     </application>
